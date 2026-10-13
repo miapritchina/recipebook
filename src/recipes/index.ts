@@ -15,6 +15,10 @@ import { hasselback } from "./hasselback/data";
 import { HasselbackPage } from "./hasselback/Page";
 import { lentilSoup } from "./lentil-soup/data";
 import { LentilSoupPage } from "./lentil-soup/Page";
+import { bliny } from "./bliny/data";
+import { BlinyPage } from "./bliny/Page";
+import { chickenNecks } from "./chicken-necks/data";
+import { ChickenNecksPage } from "./chicken-necks/Page";
 
 export const recipes: RecipeEntry[] = [
   { ...sharlotka, Page: SharlotkaPage },
@@ -23,6 +27,8 @@ export const recipes: RecipeEntry[] = [
   { ...sauerkraut, Page: SauerkrautPage },
   { ...hasselback, Page: HasselbackPage },
   { ...lentilSoup, Page: LentilSoupPage },
+  { ...bliny, Page: BlinyPage },
+  { ...chickenNecks, Page: ChickenNecksPage },
   { ...redVelvet, Page: RedVelvetPage },
   { ...carrotCake, Page: CarrotCakePage },
 ];

@@ -1,0 +1,37 @@
+/* generated-by: Claude | source: Блины тонкие recipe page | purpose: Gorodets theme */
+/* Gorodets: kupavka flowers with white "ozhivka" strokes, on a deep painted ground */
+.r-bliny {
+  --bg: #1e2a4f;
+  --fg: #fbeccb;
+  --red: #e2402b;
+  --blue: #3f74d9;
+  --green: #3c9a4a;
+  --white: #fff8ea;
+  --gold: #f6c35c;
+}
+.r-bliny .back, .r-bliny .lang-toggle { color: var(--gold); }
+.r-bliny .lang-toggle button[aria-pressed="true"] { background: var(--gold); color: var(--bg); }
+
+.r-bliny .hero { margin: 0 -16px; }
+.r-bliny .gorodets-band { display: block; }
+.r-bliny .title-block { text-align: center; padding: 2rem 16px 0; }
+.r-bliny h1 {
+  margin: 0; font-family: "Ruslan Display", serif; font-weight: 400;
+  font-size: clamp(2.4rem, 9vw, 5rem); line-height: 1.05; color: var(--gold);
+}
+.r-bliny .title-block p { margin: 0.5rem 0 0; font-style: italic; color: var(--white); opacity: 0.85; }
+
+.r-bliny .blin-stack { display: block; width: min(100%, 720px); height: auto; margin: 0.5rem auto 0; padding: 0 16px; }
+.r-bliny .blin { animation: bl-drop 0.55s cubic-bezier(.3,1.5,.5,1) var(--d) backwards; }
+.r-bliny .butter { animation: bl-drop 0.5s ease-out var(--d) backwards; }
+@keyframes bl-drop { from { transform: translateY(-70px); opacity: 0; } }
+
+.r-bliny .meta { color: var(--gold); }
+.r-bliny h2 { font-family: "Ruslan Display", serif; font-size: 1.7rem; color: var(--gold); }
+.r-bliny .ingredients li { border-bottom: 1px dashed rgba(246,195,92,.35); font-size: 1.08rem; }
+.r-bliny .bullet svg { width: 1.1rem; height: 1.1rem; }
+.r-bliny .method { font-size: 1.15rem; }
+.r-bliny .method li::marker { color: var(--red); font-weight: 700; }
+.r-bliny .notes { color: var(--white); opacity: 0.85; font-style: italic; }
+.r-bliny footer { margin-left: -16px; margin-right: -16px; max-width: none; color: var(--gold); }
+.r-bliny footer p { margin-top: 1rem; }

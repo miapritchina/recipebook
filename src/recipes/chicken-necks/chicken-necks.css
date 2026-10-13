@@ -1,0 +1,43 @@
+/* generated-by: Claude | source: Куриные шейки recipe page | purpose: Opishnya theme */
+/* Opishnya (Poltava) pottery: white engobe on red clay, brown spirals, green dots */
+.r-necks {
+  --bg: #f4ead6;
+  --fg: #3a2416;
+  --terra: #b4532a;
+  --brown: #5a3218;
+  --green: #4f8a3a;
+  --engobe: #fbf3e2;
+  --skin: #f0c597;
+}
+.r-necks .back, .r-necks .lang-toggle { color: var(--terra); }
+.r-necks .lang-toggle button[aria-pressed="true"] { background: var(--terra); color: var(--engobe); }
+
+.r-necks .hero { margin: 0 -16px; }
+.r-necks .opishnya-band { display: block; }
+.r-necks .title-block { text-align: center; padding: 2rem 16px 0; }
+.r-necks h1 {
+  margin: 0; font-family: "Underdog", cursive; font-weight: 400;
+  font-size: clamp(2.3rem, 9vw, 4.8rem); line-height: 1.05; color: var(--terra);
+}
+.r-necks .title-block p { margin: 0.4rem 0 0; font-style: italic; color: var(--brown); }
+
+.r-necks .makitra { display: block; width: min(100%, 680px); height: auto; margin: 0.5rem auto 0; padding: 0 16px; }
+.r-necks .sew { stroke-dasharray: 1; stroke-dashoffset: 1; animation: op-sew 1.8s ease-in-out 0.4s forwards; }
+@keyframes op-sew { to { stroke-dashoffset: 0; } }
+.r-necks .steam { animation: op-steam 2.4s ease-in-out infinite backwards; }
+@keyframes op-steam {
+  0% { opacity: 0; transform: translateY(12px); }
+  40% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-14px); }
+}
+@media (prefers-reduced-motion: reduce) { .r-necks .sew { stroke-dashoffset: 0; } }
+
+.r-necks .meta { color: var(--terra); }
+.r-necks h2 { font-family: "Underdog", cursive; font-size: 1.8rem; color: var(--terra); }
+.r-necks .ingredients li { border-bottom: 2px dotted rgba(90,50,24,.25); font-size: 1.08rem; }
+.r-necks .bullet svg { width: 1rem; height: 1rem; }
+.r-necks .method { font-size: 1.08rem; }
+.r-necks .method li::marker { color: var(--green); font-weight: 700; }
+.r-necks .notes { font-style: italic; color: var(--brown); }
+.r-necks footer { margin-left: -16px; margin-right: -16px; max-width: none; color: var(--terra); }
+.r-necks footer p { margin-top: 1rem; }

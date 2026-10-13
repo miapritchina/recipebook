@@ -3,6 +3,7 @@ import { recipes } from "../recipes";
 import { Berry } from "../recipes/sharlotka/Khokhloma";
 import { StarMark } from "../recipes/zapekanka/Rushnyk";
 import { seed } from "../recipes/korean-carrots/Petrykivka";
+import { Kupavka } from "../recipes/bliny/Gorodets";
 import "./home.css";
 
 const COPY = {
@@ -73,6 +74,17 @@ const MARKS: Record<string, JSX.Element> = {
       <circle cx="20" cy="20" r="17" fill="#e0262f" />
       <circle cx="20" cy="20" r="10" fill="#2756c5" />
       <circle cx="20" cy="20" r="4" fill="#f5c400" />
+    </svg>
+  ),
+  bliny: (
+    <svg viewBox="-20 -20 40 40" style={{ ["--red" as string]: "#e2402b", ["--blue" as string]: "#3f74d9", ["--white" as string]: "#fff8ea" }}>
+      <Kupavka r={14} />
+    </svg>
+  ),
+  "chicken-necks": (
+    <svg viewBox="-20 -20 40 40">
+      <circle r="18" fill="#b4532a" />
+      <path d="M0 0 m-9 0 a9 9 0 1 1 9 9 a5.5 5.5 0 1 1 -4.5 -7" fill="none" stroke="#fbf3e2" strokeWidth="3" strokeLinecap="round" />
     </svg>
   ),
   "lentil-soup": (

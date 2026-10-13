@@ -53,5 +53,11 @@
 .tile--hasselback { background: #fdfcf8; color: #e0262f; }
 .tile--hasselback .tile-title { font-family: "Comfortaa", sans-serif; font-weight: 700; font-size: 1.35rem; }
 .tile--hasselback .tile-sub { color: #2756c5; }
+.tile--bliny { background: #1e2a4f; color: #f6c35c; }
+.tile--bliny .tile-title { font-family: "Ruslan Display", serif; font-size: 1.6rem; }
+.tile--bliny .tile-sub { color: #fbeccb; }
+.tile--chicken-necks { background: #f4ead6; color: #b4532a; }
+.tile--chicken-necks .tile-title { font-family: "Underdog", cursive; font-size: 1.6rem; }
+.tile--chicken-necks .tile-sub { color: #5a3218; }
 .tile--lentil-soup { background: #e9d3a8; color: #b3321f; }
 .tile--lentil-soup .tile-title { font-family: "Kurale", serif; font-size: 1.7rem; }

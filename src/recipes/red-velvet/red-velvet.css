@@ -1,0 +1,53 @@
+/* Pavlovo Posad shawl: cabbage roses, forget-me-nots and a silk fringe on crimson velvet */
+.r-velvet {
+  --bg: #6e0a1d;
+  --fg: #fbe9ec;
+  --rose-pale: #ff9fb2;
+  --rose-mid: #e2335a;
+  --rose-deep: #8e0b28;
+  --rose-light: #ffe3ea;
+  --leaf: #3f8a4a;
+  --leaf-dark: #22552c;
+  --leaf-light: #a9dba0;
+  --blue: #6fa3ff;
+  --gold: #f3c35a;
+  background:
+    radial-gradient(ellipse at 30% 10%, rgba(255,255,255,.08), transparent 55%),
+    radial-gradient(ellipse at 80% 90%, rgba(0,0,0,.25), transparent 60%),
+    var(--bg);
+}
+.r-velvet .back, .r-velvet .lang-toggle { color: var(--rose-light); }
+.r-velvet .lang-toggle button[aria-pressed="true"] { background: var(--rose-light); color: var(--bg); }
+
+.r-velvet .shawl {
+  max-width: 720px; margin: 0.5rem auto 0; text-align: center; position: relative;
+  padding: 1.5rem 1rem 0; border: 2px solid rgba(243,195,90,.55); outline: 1px solid rgba(243,195,90,.3); outline-offset: 6px;
+}
+.r-velvet .bouquet { width: 100%; height: auto; }
+.r-velvet .bloom {
+  transform-box: fill-box; transform-origin: center;
+  animation: rv-bloom 0.9s cubic-bezier(.25,1.4,.5,1) var(--d) backwards;
+}
+@keyframes rv-bloom { from { transform: scale(0.4) rotate(-50deg); opacity: 0; } }
+.r-velvet h1 {
+  margin: -0.5rem 0 0; font-family: "Marck Script", cursive; font-weight: 400;
+  font-size: clamp(3rem, 11vw, 5.4rem); line-height: 1.05; color: var(--rose-light);
+  text-shadow: 0 2px 0 rgba(0,0,0,.25);
+}
+.r-velvet .shawl p { margin: 0 0 1.5rem; font-style: italic; color: var(--gold); }
+.r-velvet .fringe {
+  position: absolute; left: -2px; right: -2px; bottom: -34px; height: 30px;
+  background: repeating-linear-gradient(90deg, var(--gold) 0 2px, transparent 2px 7px);
+  -webkit-mask: linear-gradient(to bottom, #000 40%, transparent);
+          mask: linear-gradient(to bottom, #000 40%, transparent);
+}
+
+.r-velvet .meta { color: var(--gold); margin-top: 3rem; }
+.r-velvet h2 { font-family: "Marck Script", cursive; font-size: 2.3rem; color: var(--rose-pale); line-height: 1.1; }
+.r-velvet h3 { color: var(--gold); opacity: 1; }
+.r-velvet .ingredients li { border-bottom: 1px solid rgba(255,159,178,.18); }
+.r-velvet .bullet svg { width: 1rem; height: 1rem; }
+.r-velvet .qty { color: var(--rose-pale); }
+.r-velvet .method li::marker { color: var(--gold); }
+.r-velvet .notes { font-style: italic; color: #f4c6cf; border-left: 2px solid var(--gold); padding-left: 1rem; }
+.r-velvet footer { color: var(--gold); }

@@ -1,13 +1,23 @@
 import type { ReactNode } from "react";
 import { LangToggle, useLang } from "../lang";
-import type { RecipeData } from "../recipes/types";
+import { isHeading, type Heading, type RecipeData } from "../recipes/types";
 
 const LABELS = {
   back: { ru: "← Все рецепты", en: "← All recipes" },
   ingredients: { ru: "Состав", en: "Ingredients" },
   method: { ru: "Приготовление", en: "Method" },
   family: { ru: "Семейный рецепт", en: "A family recipe" },
+  source: { ru: "По рецепту", en: "Adapted from" },
 };
+
+function sections<T extends object>(items: (T | Heading)[]) {
+  const out: { heading?: Heading["heading"]; items: T[] }[] = [{ items: [] }];
+  for (const it of items) {
+    if (isHeading(it)) out.push({ heading: it.heading, items: [] });
+    else out[out.length - 1].items.push(it);
+  }
+  return out.filter((s) => s.heading || s.items.length);
+}
 
 interface Props {
   recipe: RecipeData;
@@ -34,24 +44,34 @@ export function RecipePage({ recipe, theme, hero, bullet, divider }: Props) {
       <div className={`body${hasSteps ? " two" : ""}`}>
         <section className="ingredients">
           <h2>{LABELS.ingredients[lang]}</h2>
-          <ul>
-            {recipe.ingredients.map((ing, i) => (
-              <li key={i}>
-                <span className="bullet" aria-hidden="true">{bullet}</span>
-                <span className="qty">{ing.qty?.[lang] ?? ""}</span>
-                <span className="name">{ing.name[lang]}</span>
-              </li>
-            ))}
-          </ul>
+          {sections(recipe.ingredients).map((sec, k) => (
+            <div key={k} className="section">
+              {sec.heading && <h3>{sec.heading[lang]}</h3>}
+              <ul>
+                {sec.items.map((ing, i) => (
+                  <li key={i}>
+                    <span className="bullet" aria-hidden="true">{bullet}</span>
+                    <span className="qty">{ing.qty?.[lang] ?? ""}</span>
+                    <span className="name">{ing.name[lang]}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </section>
         {hasSteps && (
           <section className="method">
             <h2>{LABELS.method[lang]}</h2>
-            <ol>
-              {recipe.steps.map((s, i) => (
-                <li key={i}>{s[lang]}</li>
-              ))}
-            </ol>
+            {sections(recipe.steps).map((sec, k) => (
+              <div key={k} className="section">
+                {sec.heading && <h3>{sec.heading[lang]}</h3>}
+                <ol>
+                  {sec.items.map((s, i) => (
+                    <li key={i}>{s[lang]}</li>
+                  ))}
+                </ol>
+              </div>
+            ))}
           </section>
         )}
       </div>
@@ -66,7 +86,13 @@ export function RecipePage({ recipe, theme, hero, bullet, divider }: Props) {
 
       <footer>
         {divider}
-        <p>{LABELS.family[lang]}</p>
+        {recipe.source ? (
+          <p>
+            {LABELS.source[lang]} <a href={recipe.source.url} target="_blank" rel="noreferrer">{recipe.source.label}</a>
+          </p>
+        ) : (
+          <p>{LABELS.family[lang]}</p>
+        )}
       </footer>
     </div>
   );

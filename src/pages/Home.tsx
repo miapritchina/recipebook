@@ -54,6 +54,20 @@ const MARKS: Record<string, JSX.Element> = {
     </svg>
   ),
   zapekanka: <StarMark />,
+  "red-velvet": (
+    <svg viewBox="-12 -12 24 24">
+      <circle r="11" fill="#ff9fb2" />
+      <circle r="7" fill="#e2335a" />
+      <circle r="3.5" fill="#8e0b28" />
+    </svg>
+  ),
+  "carrot-cake": (
+    <svg viewBox="0 0 30 40">
+      <path d="M15 1 C25 1 29 20 29 26 C29 34 23 39 15 39 C7 39 1 34 1 26 C1 20 5 1 15 1Z" fill="#c9201c" stroke="#1a1410" strokeWidth="1.5" />
+      <rect x="1" y="17" width="28" height="8" fill="#1a1410" />
+      <path d="M1 21 q4 -4 7 0 t7 0 t7 0 t7 0" fill="none" stroke="#ffe066" strokeWidth="1.5" />
+    </svg>
+  ),
   sauerkraut: (
     <svg viewBox="0 0 30 30">
       <rect y="3" width="30" height="8" fill="#173f8a" stroke="#f2c200" strokeWidth="1" />

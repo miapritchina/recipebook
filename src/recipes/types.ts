@@ -6,16 +6,23 @@ export interface Ingredient {
   name: L;
 }
 
+export interface Heading {
+  heading: L;
+}
+
 export interface RecipeData {
   slug: string;
   title: L;
   subtitle: L;
   meta?: L;
-  ingredients: Ingredient[];
-  steps: L[];
+  ingredients: (Ingredient | Heading)[];
+  steps: (L | Heading)[];
   notes?: L[];
+  source?: { label: string; url: string };
 }
 
 export interface RecipeEntry extends RecipeData {
   Page: ComponentType;
 }
+
+export const isHeading = (x: object): x is Heading => "heading" in x;

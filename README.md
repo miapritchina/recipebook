@@ -1,7 +1,7 @@
 <!-- generated-by: Claude | source: recipe book request | purpose: project README -->
 # Семейные рецепты · Family recipes
 
-Family recipes, each on its own hand-designed page, in Russian and English.
+Family recipes (and a couple of favourites from the web, credited), each on its own hand-designed page, in Russian and English.
 
 Live: https://miapritchina.github.io/recipebook/
 
@@ -11,6 +11,8 @@ Live: https://miapritchina.github.io/recipebook/
 | Творожная запеканка | Rushnyk — red/black cross-stitch on linen |
 | Морковь по-корейски | Petrykivka — flame-orange blooms on carrot-top green |
 | Квашеная капуста | Don Cossack — the Don flag's sky, steppe and earth |
+| Красный бархат | Pavlovo Posad shawl roses on crimson (from Andy Chef) |
+| Морковный торт | Pysanka Easter egg (from Robert Clinton / Food Network) |
 
 Home page: Gzhel cobalt on porcelain.
 

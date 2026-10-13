@@ -1,0 +1,40 @@
+/* Pysanka: wax-resist Easter egg in red, yellow, orange and black on sunflower yellow */
+.r-carrotcake {
+  --bg: #f6b81c;
+  --fg: #1a1410;
+  --ink: #1a1410;
+  --red: #c9201c;
+  --yellow: #ffe066;
+  --orange: #ef7d1a;
+}
+.r-carrotcake .back, .r-carrotcake .lang-toggle { color: var(--ink); }
+
+.r-carrotcake .egg-hero {
+  max-width: 960px; margin: 0 auto; display: grid; gap: 1.5rem; align-items: center; justify-items: center;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  .r-carrotcake .egg-hero { grid-template-columns: auto 1fr; justify-items: start; gap: 3rem; }
+}
+.r-carrotcake .pysanka {
+  width: min(62vw, 280px); height: auto; filter: drop-shadow(0 16px 18px rgba(80,40,0,.35));
+  transform-origin: 50% 95%; animation: ps-wobble 1.6s ease-out 0.2s;
+}
+@keyframes ps-wobble {
+  0% { transform: rotate(0); } 20% { transform: rotate(-9deg); } 45% { transform: rotate(6deg); }
+  70% { transform: rotate(-3deg); } 100% { transform: rotate(0); }
+}
+.r-carrotcake h1 {
+  margin: 0; font-family: "Alice", serif; font-weight: 400;
+  font-size: clamp(3rem, 11vw, 6.5rem); line-height: 0.95; color: var(--ink);
+}
+@media (max-width: 759px) { .r-carrotcake h1 { text-align: center; } }
+
+.r-carrotcake .meta { margin-top: 2rem; }
+.r-carrotcake h2 { font-family: "Alice", serif; font-size: 2rem; color: var(--red); }
+.r-carrotcake h3 { opacity: 1; color: var(--red); }
+.r-carrotcake .ingredients li { border-bottom: 2px solid rgba(26,20,16,.12); }
+.r-carrotcake .bullet svg { width: 0.85rem; height: 0.85rem; }
+.r-carrotcake .qty { color: var(--red); font-weight: 700; }
+.r-carrotcake .method li::marker { color: var(--red); font-weight: 700; }
+.r-carrotcake footer a { color: var(--red); }

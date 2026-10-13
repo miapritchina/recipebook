@@ -45,3 +45,5 @@ a { color: inherit; }
 }
 .recipe .ingredients .qty:empty { display: none; }
 .recipe .ingredients .qty:empty + .name { grid-column: 2 / -1; }
+.recipe .section + .section { margin-top: 1.75rem; }
+.recipe h3 { margin: 0 0 0.4rem; font-size: 0.8rem; font-family: "PT Mono", monospace; font-weight: 400; text-transform: uppercase; letter-spacing: 0.14em; opacity: 0.8; }

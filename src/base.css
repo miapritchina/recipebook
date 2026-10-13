@@ -1,0 +1,47 @@
+/* generated-by: Claude | source: recipe book request | purpose: shared reset + recipe skeleton */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: "PT Serif", Georgia, serif; line-height: 1.55; }
+img, svg { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+
+.lang-toggle { display: inline-flex; border: 1.5px solid currentColor; border-radius: 999px; overflow: hidden; }
+.lang-toggle button {
+  background: none; border: 0; padding: 0.3rem 0.8rem; cursor: pointer;
+  font-family: "PT Mono", monospace; font-size: 0.85rem; letter-spacing: 0.08em;
+}
+.lang-toggle button[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
+
+.recipe { min-height: 100vh; padding: 0 16px 3rem; background: var(--bg); color: var(--fg); }
+.recipe .topbar {
+  max-width: 960px; margin: 0 auto; padding: 1rem 0;
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+}
+.recipe .back { text-decoration: none; font-family: "PT Mono", monospace; font-size: 0.9rem; }
+.recipe .back:hover { text-decoration: underline; }
+.recipe .meta { text-align: center; font-family: "PT Mono", monospace; letter-spacing: 0.06em; margin: 1.5rem 0 0; }
+.recipe .body {
+  max-width: 960px; margin: 2.5rem auto 0;
+  display: grid; gap: 2.5rem; grid-template-columns: 1fr;
+}
+@media (min-width: 760px) {
+  .recipe .body.two { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+}
+.recipe h2 { margin: 0 0 1rem; font-weight: 400; }
+.recipe .ingredients ul { list-style: none; margin: 0; padding: 0; }
+.recipe .ingredients li { display: grid; grid-template-columns: 1.1rem auto 1fr; gap: 0.6rem; align-items: baseline; padding: 0.45rem 0; }
+.recipe .ingredients .qty { font-family: "PT Mono", monospace; font-size: 0.92em; white-space: nowrap; }
+.recipe .method ol { margin: 0; padding-left: 1.4rem; }
+.recipe .method li { margin-bottom: 1rem; }
+.recipe .method li::marker { font-family: "PT Mono", monospace; }
+.recipe .notes { max-width: 640px; margin: 2.5rem auto 0; }
+.recipe .notes p { margin: 0 0 0.75rem; }
+.recipe footer { max-width: 960px; margin: 3.5rem auto 0; text-align: center; font-family: "PT Mono", monospace; font-size: 0.85rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+.recipe .ingredients .qty:empty { display: none; }
+.recipe .ingredients .qty:empty + .name { grid-column: 2 / -1; }

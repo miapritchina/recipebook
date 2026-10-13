@@ -1,0 +1,38 @@
+/* Rushnyk: red-and-black cross-stitch on bleached linen */
+.r-zapekanka {
+  --bg: #fbfaf6;
+  --fg: #1d1a17;
+  --red: #c1121f;
+  --black: #1d1a17;
+  background:
+    repeating-linear-gradient(0deg, rgba(120,100,70,.045) 0 1px, transparent 1px 4px),
+    repeating-linear-gradient(90deg, rgba(120,100,70,.045) 0 1px, transparent 1px 4px),
+    var(--bg);
+}
+.r-zapekanka .st { fill: none; stroke-width: 2.2; stroke-linecap: round; }
+.r-zapekanka .st-r { stroke: var(--red); }
+.r-zapekanka .st-k { stroke: var(--black); }
+
+.r-zapekanka .hero { margin: 0 -16px; }
+.r-zapekanka .rushnyk { display: block; }
+.r-zapekanka .title-block { text-align: center; padding: 2.2rem 0 0; }
+.r-zapekanka h1 {
+  margin: 0; font-family: "Neucha", cursive; font-weight: 400;
+  font-size: clamp(2.6rem, 10vw, 5rem); line-height: 1; color: var(--black);
+}
+.r-zapekanka .title-block p { margin: 0.5rem 0 0; font-style: italic; color: var(--red); }
+
+.r-zapekanka .body { max-width: 560px; }
+.r-zapekanka h2 {
+  font-family: "Neucha", cursive; font-size: 1.9rem; color: var(--red); text-align: center;
+}
+.r-zapekanka .ingredients li { border-bottom: 1px dashed rgba(193,18,31,.3); font-size: 1.08rem; }
+.r-zapekanka .bullet svg { width: 0.9rem; height: 0.9rem; }
+.r-zapekanka .qty { color: var(--red); }
+
+.r-zapekanka .notes {
+  text-align: center; font-family: "Neucha", cursive; font-size: 1.5rem; line-height: 1.35;
+  color: var(--red); max-width: 520px; transform: rotate(-1.2deg);
+}
+.r-zapekanka footer { margin-left: -16px; margin-right: -16px; max-width: none; }
+.r-zapekanka footer p { margin-top: 1rem; }

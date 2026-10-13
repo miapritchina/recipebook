@@ -1,0 +1,40 @@
+/* Don Cossack: the Don flag's blue sky, yellow steppe, red earth; a crock under a river stone */
+.r-sauerkraut {
+  --bg: #173f8a;
+  --fg: #f4f1e6;
+  --yellow: #f2c200;
+  --red: #d21f2b;
+}
+.r-sauerkraut .back, .r-sauerkraut .lang-toggle { color: var(--yellow); }
+.r-sauerkraut .lang-toggle button[aria-pressed="true"] { background: var(--yellow); color: var(--bg); }
+
+.r-sauerkraut .hero { margin: 0 -16px; }
+.r-sauerkraut .title-block { text-align: center; padding: 1rem 16px 0; }
+.r-sauerkraut h1 {
+  margin: 0; font-family: "Russo One", sans-serif; font-weight: 400; text-transform: uppercase;
+  font-size: clamp(2.1rem, 8vw, 4.4rem); line-height: 1; letter-spacing: 0.02em; color: var(--yellow);
+}
+.r-sauerkraut .title-block p { margin: 0.5rem 0 0; font-style: italic; }
+.r-sauerkraut .steppe {
+  background: linear-gradient(to bottom, transparent 68.75%, var(--yellow) 68.75% 88.75%, var(--red) 88.75%);
+}
+.r-sauerkraut .crock-scene { width: 100%; max-width: 900px; margin: 0 auto; height: auto; overflow: visible; }
+
+.r-sauerkraut .stone { animation: sk-drop 0.9s cubic-bezier(.5,0,.75,0) 0.4s backwards, sk-settle 0.35s ease-out 1.3s; transform-box: fill-box; transform-origin: bottom center; }
+.r-sauerkraut .juice { transform-box: fill-box; transform-origin: bottom; animation: sk-juice 2.2s ease-out 1.5s backwards; }
+@keyframes sk-drop { from { transform: translateY(-260px); } }
+@keyframes sk-settle { 40% { transform: scaleY(0.94) scaleX(1.03); } }
+@keyframes sk-juice { from { transform: scaleY(0); } }
+
+.r-sauerkraut .meta { color: var(--yellow); margin-top: 1.25rem; }
+.r-sauerkraut h2 {
+  font-family: "Russo One", sans-serif; text-transform: uppercase; font-size: 1.35rem; letter-spacing: 0.04em;
+  color: var(--yellow); padding-bottom: 0.6rem; border-bottom: 4px solid var(--red);
+}
+.r-sauerkraut .ingredients li { border-bottom: 1px solid rgba(242,194,0,.25); font-size: 1.08rem; }
+.r-sauerkraut .bullet svg { width: 0.95rem; height: 0.95rem; }
+.r-sauerkraut .qty { color: var(--yellow); }
+.r-sauerkraut .method { font-size: 1.1rem; }
+.r-sauerkraut .method li::marker { color: var(--yellow); }
+.r-sauerkraut .notes { border-left: 4px solid var(--yellow); padding-left: 1rem; }
+.r-sauerkraut footer { color: var(--yellow); }

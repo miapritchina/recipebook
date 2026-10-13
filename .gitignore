@@ -1,0 +1,8 @@
+# generated-by: Claude | source: repo scaffold | purpose: ignore OS/editor/build cruft
+.DS_Store
+node_modules/
+dist/
+.env
+.env.*
+.vscode/
+.idea/

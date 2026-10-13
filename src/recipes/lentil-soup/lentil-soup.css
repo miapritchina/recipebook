@@ -1,0 +1,30 @@
+/* Mezen painting: red ochre and soot-black birds on raw pine */
+.r-lentil {
+  --bg: #e9d3a8;
+  --fg: #2a1a12;
+  --ink: #1e1410;
+  --red: #b3321f;
+  background:
+    repeating-linear-gradient(92deg, rgba(150,95,40,.07) 0 2px, transparent 2px 19px),
+    repeating-linear-gradient(88deg, rgba(150,95,40,.05) 0 1px, transparent 1px 7px),
+    var(--bg);
+}
+.r-lentil .back, .r-lentil .lang-toggle { color: var(--ink); }
+
+.r-lentil .board { max-width: 760px; margin: 0.5rem auto 0; text-align: center; }
+.r-lentil .frieze { width: 100%; height: auto; }
+.r-lentil .hop { animation: mz-hop 0.6s ease-out var(--d) backwards; }
+@keyframes mz-hop { from { transform: translateY(-14px); opacity: 0; } }
+.r-lentil h1 {
+  margin: 1.25rem 0 1rem; font-family: "Kurale", serif; font-weight: 400;
+  font-size: clamp(2.6rem, 10vw, 5.2rem); line-height: 1; color: var(--red);
+}
+.r-lentil .lozenges { display: block; }
+
+.r-lentil h2 { font-family: "Kurale", serif; font-size: 2rem; color: var(--red); }
+.r-lentil .ingredients li { border-bottom: 1px solid rgba(30,20,16,.2); font-size: 1.08rem; }
+.r-lentil .bullet svg { width: 0.9rem; height: 0.9rem; }
+.r-lentil .method { font-size: 1.1rem; }
+.r-lentil .method li::marker { color: var(--red); font-weight: 700; }
+.r-lentil .notes { font-family: "Kurale", serif; font-size: 1.2rem; color: var(--red); text-align: center; }
+.r-lentil footer .lozenges { max-width: 320px; margin: 0 auto; }

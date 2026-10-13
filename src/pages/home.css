@@ -50,3 +50,8 @@
 .tile--red-velvet .tile-sub { color: #f3c35a; }
 .tile--carrot-cake { background: #f6b81c; color: #1a1410; }
 .tile--carrot-cake .tile-title { font-family: "Alice", serif; font-size: 1.7rem; }
+.tile--hasselback { background: #fdfcf8; color: #e0262f; }
+.tile--hasselback .tile-title { font-family: "Comfortaa", sans-serif; font-weight: 700; font-size: 1.35rem; }
+.tile--hasselback .tile-sub { color: #2756c5; }
+.tile--lentil-soup { background: #e9d3a8; color: #b3321f; }
+.tile--lentil-soup .tile-title { font-family: "Kurale", serif; font-size: 1.7rem; }

@@ -11,6 +11,8 @@ Live: https://miapritchina.github.io/recipebook/
 | Творожная запеканка | Rushnyk — red/black cross-stitch on linen |
 | Морковь по-корейски | Petrykivka — flame-orange blooms on carrot-top green |
 | Квашеная капуста | Don Cossack — the Don flag's sky, steppe and earth |
+| Картошка-гармошка | Dymkovo — bright rings and dots; the slices fan open |
+| Чечевичный суп | Mezen — red and black birds on raw pine |
 | Красный бархат | Pavlovo Posad shawl roses on crimson (from Andy Chef) |
 | Морковный торт | Pysanka Easter egg (from Robert Clinton / Food Network) |
 

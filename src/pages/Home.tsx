@@ -68,6 +68,19 @@ const MARKS: Record<string, JSX.Element> = {
       <path d="M1 21 q4 -4 7 0 t7 0 t7 0 t7 0" fill="none" stroke="#ffe066" strokeWidth="1.5" />
     </svg>
   ),
+  hasselback: (
+    <svg viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="17" fill="#e0262f" />
+      <circle cx="20" cy="20" r="10" fill="#2756c5" />
+      <circle cx="20" cy="20" r="4" fill="#f5c400" />
+    </svg>
+  ),
+  "lentil-soup": (
+    <svg viewBox="0 0 40 40">
+      <path d="M20 4 L36 20 L20 36 L4 20Z" fill="#b3321f" stroke="#1e1410" strokeWidth="2.5" />
+      <path d="M20 14 L26 20 L20 26 L14 20Z" fill="#1e1410" />
+    </svg>
+  ),
   sauerkraut: (
     <svg viewBox="0 0 30 30">
       <rect y="3" width="30" height="8" fill="#173f8a" stroke="#f2c200" strokeWidth="1" />

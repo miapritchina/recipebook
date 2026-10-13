@@ -1,0 +1,44 @@
+/* Dymkovo: whitewashed clay toys painted with bright rings, dots and waves */
+.r-hasselback {
+  --bg: #fdfcf8;
+  --fg: #22201c;
+  --red: #e0262f;
+  --blue: #2756c5;
+  --yellow: #f5c400;
+  --orange: #f07d1a;
+  --green: #1f9d55;
+  --cheese: #ffd84a;
+  --bacon: #d9455f;
+}
+.r-hasselback .back, .r-hasselback .lang-toggle { color: var(--blue); }
+.r-hasselback .lang-toggle button[aria-pressed="true"] { background: var(--blue); color: #fff; }
+
+.r-hasselback .hero { margin: 0 -16px; }
+.r-hasselback .dymkovo { display: block; }
+.r-hasselback .title-block { text-align: center; padding: 2rem 16px 0; }
+.r-hasselback h1 {
+  margin: 0; font-family: "Comfortaa", sans-serif; font-weight: 700;
+  font-size: clamp(2.2rem, 8.5vw, 4.6rem); line-height: 1.05; color: var(--red); letter-spacing: -0.02em;
+}
+.r-hasselback .title-block p { margin: 0.5rem 0 0; font-style: italic; color: var(--blue); }
+
+.r-hasselback .garmoshka { display: block; width: min(100%, 720px); height: auto; margin: 0.5rem auto 0; padding: 0 16px; }
+.r-hasselback .slice {
+  transform-box: fill-box; transform-origin: 50% 100%; transform: rotate(var(--a));
+  animation: hb-fan 0.9s cubic-bezier(.3,1.4,.5,1) var(--d) backwards;
+}
+.r-hasselback .filling {
+  transform-box: fill-box; transform-origin: 50% 100%;
+  animation: hb-tuck 0.45s ease-out var(--d) backwards;
+}
+@keyframes hb-fan { from { transform: rotate(0deg); } }
+@keyframes hb-tuck { from { transform: translateY(-40px); opacity: 0; } }
+
+.r-hasselback .meta { color: var(--blue); }
+.r-hasselback h2 { font-family: "Comfortaa", sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--blue); }
+.r-hasselback .ingredients li { border-bottom: 2px dotted rgba(39,86,197,.3); font-size: 1.08rem; }
+.r-hasselback .bullet svg { width: 1rem; height: 1rem; }
+.r-hasselback .method { font-size: 1.08rem; }
+.r-hasselback .method li::marker { color: var(--red); font-weight: 700; }
+.r-hasselback footer { margin-left: -16px; margin-right: -16px; max-width: none; color: var(--blue); }
+.r-hasselback footer p { margin-top: 1rem; }
